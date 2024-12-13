@@ -1,0 +1,10 @@
+.cont input {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.email input:placeholder-shown, .username input:placeholder-shown, .email input:placeholder-shown, .name input:placeholder-shown, .birthdate input:invalid {
+    border-color: red;
+}

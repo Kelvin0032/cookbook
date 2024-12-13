@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout Confirmation</title>
+    <style>
+      body {
+        user-select: none;
+      }
+      button {
+        color: #622174;
+        font-size: 18px;
+        background: transparent;
+        border: none;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 20% auto;
+        padding: 50px;
+        border: 1px solid #888;
+        width: 30%;
+        text-align: center;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+      }
+
+      #logoutModal:target {
+        display: block;
+      }
+      .modal-button {
+        margin-top: 10px;
+        margin: 30px;
+        padding: 30px 20px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+      .modal-button:active {
+        cursor: pointer;
+        color: white;
+        background-color: #622174;
+      }
+      a button {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#logoutModal"><button>Logout</button></a>
+
+    <div id="logoutModal" class="modal">
+      <div class="modal-content">
+        <span class="close"
+          ><a href="#" style="text-decoration: none; color: #aaa"
+            >&times;</a
+          ></span
+        >
+        <p>Are you sure you want to log out?</p>
+        <a href="logout.php" class="modal-button">Yes</a>
+        <a href="#" class="modal-button">No</a>
+      </div>
+    </div>
+  </body>
+</html>

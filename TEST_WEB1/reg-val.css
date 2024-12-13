@@ -1,0 +1,195 @@
+* {
+    font-family: Arial;
+    margin: 0;
+}
+
+body {
+    background-color: #f0baff;
+	user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    border-color: white;
+    padding: 20px;
+    width: 300px;
+    height: 600px;
+    background-color: #e587ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    position: relative;
+    top: 150px;
+    left: 300px;
+}
+
+.register {
+    position: absolute;
+    top: 30px;
+}
+
+.register h1 {
+    font-family: Segoe Script;
+    font-size: 50px;
+    color: #f0baff;
+    text-shadow: -1px -1px 0 #7129ab, 1px -1px 0 #7129ab, 1px 1px 0 #7129ab, 1px 1px 0 #7129ab;
+}
+
+input {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    height: 25px;
+    width: 200px;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.box p {
+    color: #54325e;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+}
+
+input[type="password"]:invalid:not(:placeholder-shown) + p {
+    color: red;
+}
+
+input[type="password"]:valid + p {
+    color: green;
+}
+
+input:invalid + button[type="submit"] {
+    opacity: .6;
+    pointer-events: none;
+}
+
+.box {
+    position: relative;
+    top: 25px;
+}
+
+.box label {
+    position: relative;
+    left: 10px;
+    font-family: Bahnschrift;
+    color: #54325e;
+}
+
+.box p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.box7 {
+	position: relative;
+	top: 108px;
+	left: 115px;
+	width:50px;
+}
+
+.box7 button {
+	border: none;
+	border-radius: 25px;
+	height: 50px;
+	width: 90px;
+	font-family: Bahnschrift semibold;
+	background-color: #e587ff;
+}
+
+.box7 button:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	background-color: #f0baff;
+	transition: transform 125ms;
+    transform: translateY(-2px);
+}
+
+.box7 button:active {
+	color: white;
+	background-color: #e587ff;
+	border: 1px solid #7129ab;
+	cursor: pointer;
+}
+
+.box8 {
+	position: relative;
+	top: 30px;
+	left: 15px;
+}
+
+.box8 p {
+	display: inline-block;
+	font-size: 12px;
+}
+
+.box8 p .login-line {
+	position: relative;
+	font-family: Franklin Gothic Medium;
+	font-size: 13px;
+	color: blue;
+	text-decoration: underline;
+}
+
+.box8 p .login-line:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.box8 p .login-line:active {
+	color: black;
+}
+
+.box9 {
+	position: relative;
+	top: 40px;
+	width:50px;
+}
+
+.box9 button {
+	display: inline-block;
+	border: none;
+	border-radius: 25px;
+	height: 50px;
+	width: 90px;
+	font-family: Bahnschrift semibold;
+	background-color: #e587ff;
+}
+
+.box9 button:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	background-color: #f0baff;
+	transition: transform 125ms;
+    transform: translateY(-2px);
+}
+
+.box9 button:active {
+	color: white;
+	background-color: #e587ff;
+	border: 1px solid #7129ab;
+	cursor: pointer;
+}
+
+.img {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50px;
+	left:700px
+}
+
+.img img {
+	height: 900px;
+	width: 1000px;
+}
+
+input {
+	padding: 0 5px;
+}

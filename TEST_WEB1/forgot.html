@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECOVER ACCOUNT</title>
+    <link rel="stylesheet" href="forgot.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="recover">
+        <h1>Recover Account</h1>
+      </div>
+
+      <form action="send code-forgot/send_code.php" method="post">
+        <div class="input1">
+          <label for="email">Email Address</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address..."
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            title="Please enter a valid email address."
+            required
+          />
+        </div>
+
+        <div class="btn1">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+
+      <form action="send code-forgot/verify_code.php" method="post">
+        <div class="input2">
+          <input
+            type="text"
+            name="code"
+            id="code"
+            maxlength="6"
+            placeholder="Enter the code here..."
+            pattern="^\d{1,6}$"
+            title="Please enter a code consisting of up to 6 digits."
+            required
+          />
+        </div>
+        <div class="btn2">
+          <button type="submit">Ok</button>
+        </div>
+      </form>
+
+      <div class="back">
+        <a href="login.php"><button type="button">&lt; Back</button></a>
+      </div>
+    </div>
+  </body>
+</html>

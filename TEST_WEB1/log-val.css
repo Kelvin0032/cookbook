@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0baff;
+    user-select: none;
+}
+
+.log-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    border-color: white;
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: #e587ff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+
+.login {
+    position: absolute;
+    top: 30px;
+    width: fit-content;
+}
+
+.login h1 {
+    font-family: 'Segoe Script', cursive;
+    font-size: 50px;
+    color: #f0baff;
+    text-shadow: -1px -1px 0 #7129ab, 1px -1px 0 #7129ab, 1px 1px 0 #7129ab, 1px 1px 0 #7129ab;
+}
+
+input {
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    height: 35px;
+    width: 200px;
+    font-size: 15px;
+    padding: 0 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+input[type="text"]:valid:not(:placeholder-shown) {
+    border-color: green;
+}
+
+input[type="password"]:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+p {
+    font-size: 12px;
+    color: #54325e;
+}
+
+input[type="password"]:valid:not(:placeholder-shown) {
+    border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) ~ p {
+    color: red;
+}
+
+input:valid:not(:placeholder-shown) ~ p {
+    color: green;
+}
+
+.error-message {
+    position: absolute;
+    top: 325px;
+    left: 68px;
+    text-align: center;
+    font-size: 15px;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.box1, .box2 {
+    position: relative;
+    top: 25px;
+}
+
+.box1 label, .box2 label {
+    position: relative;
+    left: 10px;
+    font-family: 'Bahnschrift', sans-serif;
+    color: #54325e;
+}
+
+.box3 {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: fit-content;
+}
+
+.box3 p {
+    position: relative;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 13px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.box3 p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.box3 p:active {
+    color: black;
+}
+
+.box4 {
+    position: relative;
+    top: 108px;
+    left: 120px;
+    width: fit-content;
+}
+
+.box4 button {
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 90px;
+    font-family: Bahnschrift semibold;
+    background-color: #e587ff;
+}
+
+.box4 button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #f0baff;
+    transition: transform 125ms;
+    transform: translateY(-2px);
+}
+
+.box4 button:active {
+    color: white;
+    background-color: #e587ff;
+    border: 1px solid #7129ab;
+    cursor: pointer;
+}
+
+.box5 {
+    position: relative;
+    top: 58px;
+    width: fit-content;
+}
+
+.box5 button {
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 90px;
+    font-family: Bahnschrift semibold;
+    background-color: #e587ff;
+}
+
+.box5 button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #f0baff;
+    transition: transform 125ms;
+    transform: translateY(-2px);
+}
+
+.box5 button:active {
+    color: white;
+    background-color: #e587ff;
+    border: 1px solid #7129ab;
+    cursor: pointer;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 700px;
+}
+
+.img img {
+    height: 900px;
+    width: 1000px;
+}

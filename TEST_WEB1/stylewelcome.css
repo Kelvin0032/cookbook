@@ -1,0 +1,60 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0baff;
+}
+
+.welcome-box {
+    text-align: center;
+    background-color: #e27aff;
+    padding: 50px;
+    border-radius: 30px;
+    width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.welcome-box h1 {
+    font-size: 36px;
+    color: #622174;
+    margin-bottom: 20px;
+}
+
+.welcome-box p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.welcome-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.welcome-btn {
+    border: 2px solid #622174;
+    background-color: #f7daff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-btn:hover {
+    background-color: #b94ed6;
+    color: white;
+}
+
+.cookbook-container img {
+    object-position: center;
+    object-fit: contain;
+    height: 700px;
+    width: 700px;
+    margin-top: 120px;
+    margin-left: 0px;
+    
+  }
